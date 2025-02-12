@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo-icon.png">
+    <title>Remita Payment Confirmation</title>
+    <style>
+        :root {
+            --primary-orange: #F15A22;
+            --success-green: #006634;
+            --link-blue: #0056b3;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--primary-orange);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .signin-btn {
+            background: white;
+            color: var(--primary-orange);
+            padding: 8px 20px;
+            border-radius: 20px
+        }
+
+        .signup-btn {
+            border: 2px solid white;
+            padding: 8px 20px;
+            border-radius: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: var(--primary-orange);
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .success-banner {
+            background-color: var(--success-green);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .institution {
+            text-align: center;
+            font-size: 18px;
+            margin: 30px 0;
+        }
+
+        .reference {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .reference-number {
+            font-size: 24px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .payment-section {
+            margin: 30px 0;
+        }
+
+        .payment-header {
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 12px 20px;
+        }
+
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .payment-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .payment-table td {
+            padding: 12px 20px;
+            color: #666;
+        }
+
+        .payment-table td:last-child {
+            text-align: right;
+            color: #333;
+        }
+
+        .total-row {
+            background-color: #eee;
+            font-weight: bold;
+        }
+
+        .print-btn {
+            background-color: #006B54;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            display: block;
+            margin: 30px auto;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .contact-section h3,
+        .connect-section h3 {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .app-stores {
+            display: flex;
+            gap: 10px;
+        }
+
+        .app-store-btn {
+            height: 40px;
+        }
+
+        .license-text {
+            color: var(--primary-orange);
+        }
+
+        .footer-links {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .show-details {
+            color: #666;
+            text-decoration: none;
+            text-align: right;
+            display: block;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="remita-logo.png" alt="Remita" class="logo">
+        <div class="nav-links">
+            <a href="#">ABOUT</a>
+            <a href="#">REMITA MOBILE</a>
+            <a href="#">DEVELOPERS</a>
+            <a href="#" class="signin-btn" style="color:red;">SIGNIN</a>
+            <a href="#" class="signup-btn">SIGNUP</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Payment Confirmation</h1>
+
+        <div class="success-banner">
+            ⚪ Payment Successful -successful ⚪
+        </div>
+
+        <div class="institution">
+            WAZIRI UMARU FEDERAL POLYTECHNIC
+        </div>
+
+        <div class="reference">
+            Generated on 10/02/2025
+            <div>Remita Retrieval Reference</div>
+            <div class="reference-number">2712-0382-3013</div>
+        </div>
+
+        <div class="payment-section">
+            <div class="payment-header">Payment Details</div>
+            <table class="payment-table">
+                <tr>
+                    <td>WUFPBK DHS School Fees</td>
+                    <td>NGN 90,000.00</td>
+                </tr>
+                <tr>
+                    <td>Charges</td>
+                    <td>NGN 633.75</td>
+                </tr>
+                <tr>
+                    <td>Vat On Charges</td>
+                    <td>NGN 11.25</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total Amount</td>
+                    <td>NGN 90,645.00</td>
+                </tr>
+            </table>
+            <a href="#" class="show-details">▼ Show Details</a>
+        </div>
+
+        <button class="print-btn">🖨️ PRINT RECEIPT</button>
+
+        <footer class="footer">
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p>Remita Payment Services Limited</p>
+                    <p class="license-text">Licensed by the Central Bank of Nigeria</p>
+                    <p>Plot B22 Chief Yesufu Abiodun Road, Oniru<br>
+                    Victoria Island, Lagos, Nigeria</p>
+                    <p>info@remita.net</p>
+                </div>
+            </div>
+
+            <div class="connect-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <!-- Add social media icons here -->
+                </div>
+                <div class="app-stores">
+                    <img src="google-play.png" alt="Get it on Google Play" class="app-store-btn">
+                    <img src="app-store.png" alt="Download on the App Store" class="app-store-btn">
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a> |
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    document.querySelector('.show-details').addEventListener('click', function(e) {
+        e.preventDefault();
+        this.textContent = this.textContent.includes('Show') ? '▲ Hide Details' : '▼ Show Details';
+    });
+
+    document.querySelector('.print-btn').addEventListener('click', function() {
+        // Change 'receipt.pdf' to match your PDF file name
+        const pdfUrl = 'receipt.pdf';
+        window.open(pdfUrl, '_blank');
+    });
+</script>
+
+</body>
+</html>
